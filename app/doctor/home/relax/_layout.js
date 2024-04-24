@@ -1,12 +1,14 @@
-import { Stack } from 'expo-router'
+import { Stack, useLocalSearchParams } from 'expo-router'
 import React from 'react'
 
 function _layout() {
+    const name = useLocalSearchParams();
   return (
     <Stack>
-            <Stack.Screen name="index"
-            options={{
-                    headerTitle: "Relxation Exercise",
+            <Stack.Screen 
+                name="index" 
+                options={{
+                    headerTitle: "Breathing Exercise",
                     headerShown: true,
                     headerBackTitleVisible: false,
                     headerShadowVisible: false,
@@ -14,12 +16,12 @@ function _layout() {
                         backgroundColor: "white",
                     },
                     headerTintColor: "black",
-                }} 
-             />
+                }}
+            />
             <Stack.Screen 
                 name="breathingCircle" 
                 options={{
-                    headerTitle: "Circle",
+                    headerTitle: "Breathing Exercise",
                     headerShown: true,
                     headerBackTitleVisible: false,
                     headerShadowVisible: false,
@@ -32,7 +34,7 @@ function _layout() {
             <Stack.Screen 
                 name="breathingSquare" 
                 options={{
-                    headerTitle: "Square",
+                    headerTitle: "Breathing Exercise",
                     headerShown: true,
                     headerBackTitleVisible: false,
                     headerShadowVisible: false,
@@ -45,7 +47,7 @@ function _layout() {
             <Stack.Screen 
                 name="breathing4-7-8" 
                 options={{
-                    headerTitle: "4-7-8",
+                    headerTitle: "Breathing Exercise",
                     headerShown: true,
                     headerBackTitleVisible: false,
                     headerShadowVisible: false,
